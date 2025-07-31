@@ -1,0 +1,21 @@
+.black-square-container {
+    display: flex;
+    width: 500px;
+    height: 800px;
+    margin: 50px;
+}
+
+.black-square-rounded {
+    display: flex;
+    width: 500px;
+    height: 800px;
+    border-radius: 50px;
+    background-color: black;
+}
+
+.button-container {
+    width: 500px;
+    height: 500px;
+    border-radius: 50px;
+    align-self: end;
+}
