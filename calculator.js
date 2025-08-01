@@ -23,6 +23,28 @@ function divide(a, b) {
     return Math.round((a / b), 4);
 }
 
+// Create a function that on user selection on the button populates the box 
+// Use a variable to store the user input into a temporary use
+
+
+function populateBox(number) {
+    // Create a variable
+    let userInput = 0;
+
+    // Look for user input
+    let boxSelect = document.querySelectorAll('input[type=button]')
+
+    //Return user selection to the console
+    console.log(boxSelect);
+
+    //Store the selected number into the userInput variable
+
+    // If more numbers, add it on to the next one
+    // Keep adding until user hits a OPERATOR
+    // Store this variable in NUMBER_01
+
+}
+
 // Depending on what the user calls, the operate function runs
 function operate(oper, num1, num2) {
 
@@ -57,3 +79,5 @@ function operate(oper, num1, num2) {
 }
 
 // alert("Your calculation result is: " + operate(OPERATOR, NUMBER, NUMBER_02));
+
+//function calls go here
