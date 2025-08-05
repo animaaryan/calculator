@@ -11,41 +11,44 @@
 <body>
     <div class="main-body">
         <div class="result-screen">
-            <input type="text" id="result-final" onclick="deleteZero()"></input><br><br>
+            <input type="text" id="result-final"></input>
         </div>
-        <table class="calculator-box">
+        <table class="calculator-box" id="button-select">
             <tr>
-                <td><button class="button-gray" onclick="populateBox()"> &#9003; </button></td>
-                <td><button class="button-gray" onclick="populateBox()"> AC </button></td>
-                <td><button class="button-gray" onclick="populateBox()"> &#37; </button></td>
-                <td><button class="button-orange" onclick="populateBox()"> &#247; </button></td><br><br>
+                <td><button class="button-gray" onclick="populateBox(this)" value="&#9003;"> &#9003; </button></td>
+                <td><button class="button-gray" onclick="populateBox(this)" value="AC"> AC </button></td>
+                <td><button class="button-gray" onclick="populateBox(this)" value="&#37;"> &#37; </button></td>
+                <td><button class="button-orange" onclick="populateBox(this)" value="&#247;"> &#247; </button></td><br><br>
             </tr>
             <tr>
-                <td><button type="button" onclick="populateBox()"> 7 </button></td>
-                <td><button type="button" onclick="populateBox()"> 8 </button></td>
-                <td><button type="button" onclick="populateBox()"> 9 </button></td>
-                <td><button class="button-orange" onclick="populateBox()"> &#215; </button></td><br><br>
+                <td><button type="button" onclick="populateBox(this)" value="7"> 7 </button></td>
+                <td><button type="button" onclick="populateBox(this)" value="8"> 8 </button></td>
+                <td><button type="button" onclick="populateBox(this)" value="9"> 9 </button></td>
+                <td><button class="button-orange" onclick="populateBox(this)" value="&#215;"> &#215; </button></td><br><br>
             </tr>
             <tr>
-                <td><button type="button" onclick="populateBox()"> 4 </button></td>
-                <td><button type="button" onclick="populateBox()"> 5 </button></td>
-                <td><button type="button" onclick="populateBox()"> 6 </button></td>
-                <td><button class="button-orange" onclick="populateBox()"> &#8722; </button></td><br><br>
+                <td><button type="button" onclick="populateBox(this)" value="4"> 4 </button></td>
+                <td><button type="button" onclick="populateBox(this)" value="5"> 5 </button></td>
+                <td><button type="button" onclick="populateBox(this)" value="6"> 6 </button></td>
+                <td><button class="button-orange" onclick="populateBox(this)" value="&#8722;"> &#8722; </button></td>
+                <br><br>
             </tr>
             <tr>
-                <td><button type="button" onclick="populateBox()"> 1 </button></td>
-                <td><button type="button" onclick="populateBox()"> 2 </button></td>
-                <td><button type="button" onclick="populateBox()"> 3 </button></td>
-                <td><button class="button-orange" onclick="populateBox()"> &#43; </button></td><br><br>
+                <td><button type="button" onclick="populateBox(this)" value="1"> 1 </button></td>
+                <td><button type="button" onclick="populateBox(this)" value="2"> 2 </button></td>
+                <td><button type="button" onclick="populateBox(this)" value="3"> 3 </button></td>
+                <td><button class="button-orange" onclick="populateBox(this)" value="&#43;"> &#43; </button></td><br><br>
             </tr>
             <tr>
-                <td><button type="button" onclick="populateBox()"> &#43;&#47;&#8722; </button></td>
-                <td><button type="button" onclick="populateBox()"> 0 </button></td>
-                <td><button type="button" onclick="populateBox()"> . </button></td>
-                <td><button class="button-orange" onclick="populateBox()"> &#61; </button></td><br><br>
+                <td><button type="button" onclick="populateBox(this)" value="&#43;&#47;&#8722;"> &#43;&#47;&#8722; </button>
+                </td>
+                <td><button type="button" onclick="populateBox(this)" value="0"> 0 </button></td>
+                <td><button type="button" onclick="populateBox(this)" value="."> . </button></td>
+                <td><button class="button-orange" onclick="populateBox(this)" value="&#61;"> &#61; </button></td><br><br>
             </tr>
         </table>
     </div>
+
     <script src="calculator.js"></script>
 </body>
 

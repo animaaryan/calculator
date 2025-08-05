@@ -27,17 +27,19 @@ function divide(a, b) {
 // Use a variable to store the user input into a temporary use
 
 
-function populateBox(number) {
-    // Create a variable
-    let userInput = 0;
+function populateBox(findNum) {
 
-    // Look for user input
-    let boxSelect = document.querySelectorAll('input[type=button]')
+    // Return user selection to the console 
+    //  We added this to the HTML file to directly return the value
+    //  Solution from: https://stackoverflow.com/a/51736299
+    var buttonValue = findNum.innerText;
 
-    //Return user selection to the console
-    console.log(boxSelect);
+    // Store the selected number into the userInput variable
+    const USERVALUE = buttonValue;
 
-    //Store the selected number into the userInput variable
+    // Display it on the calculator?
+    console.log(USERVALUE);
+
 
     // If more numbers, add it on to the next one
     // Keep adding until user hits a OPERATOR
